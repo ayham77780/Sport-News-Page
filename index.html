@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>NewsFeed</title>
+  <meta charset="utf-8">
+
+<link rel="stylesheet" type="text/css"
+href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<link rel="stylesheet" type="text/css" href="style.css">
+
+
+</head>
+
+
+<body>
+
+<!-------- Navbar -------->
+<nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="fa-solid fa-newspaper"></i> NewsFeed </a> 
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"><i class="fa-solid fa-house-chimney"></i> Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#"><i class="fa-solid fa-align-right"></i> Menu</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fas fa-angle-double-right"></i> Other
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="https://codepen.io/ayham77780/full/rNYZLzO" target="_blank">Game Store (mini)</a></li>
+            <li><a class="dropdown-item" href="https://codepen.io/ayham77780/full/jOGwEzO" target="_blank">Dice Game</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="https://codepen.io/ayham77780/full/poWeGYZ" target="_blank">Children Game</a></li>
+          </ul>
+        </li>
+        <li class="nav-item" data-bs-toggle="modal"
+ data-bs-target="#myModal2">
+          <a class="nav-link" href="#" tabindex="-1">
+           <i class="fas fa-asterisk"></i> About</a>
+        </li>
+      </ul>
+
+      <i class="fa fa-sign-in float-right m-auto text-white fa-lg" data-bs-toggle="modal"
+ data-bs-target="#myModal"></i>
+      <form class="d-flex mt-2">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn text-white hover1" type="submit"><i class="fas fa-search"></i></button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+<!-------- Navbar -------->
+
+
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="settingsModal"
+        aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+    
+      
+
+
+      <!-- Modal body -->
+      <div class="modal-body">
+    <h4 class="modal-title">Created by <strong>Ayham Suliman
+        </strong></h4>
+     
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- The Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="settingsModal"
+        aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+
+      <!-- Modal Header -->
+      <div class="modal-header">
+        <h4 class="modal-title">Login</h4>
+     
+      </div>
+
+      <!-- Modal body -->
+      <div class="modal-body">
+       <div class="row row-content">
+         <label for="email" class="col-sm-3 mt-1">Email</label>
+         <input type="email" name="email" id="email" class="col-sm-7 mt-1">
+       </div>
+
+
+        <div class="row row-content">
+         <label for="pass" class="col-sm-3 mt-1">Password</label>
+         <input type="pass" name="pass" id="pass" class="col-sm-7 mt-1">
+       </div>
+
+      </div>
+
+      <!-- Modal footer -->
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Close</button>
+
+        <button type="button" class="btn btn-success">Sign Up</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<div class="space"></div>
+<div class="space"></div>
+
+
+<header class="jumbotron">
+  <div class="container">
+    <div class="row row-header">
+      <div class="col-12 col-sm-6">
+        <h1>Latest Sport News</h1>
+      </div>
+    </div>
+  </div>
+</header>
+
+
+
+<div class="space"></div>
+
+
+
+
+
+
+
+<div class="container">
+  
+<div class="row row-content">
+
+<div class="col-sm-5">
+<h2>Man Utd news: Cristiano Ronaldo sent stinging message as dressing room antics split opinion</h2>
+
+  
+</div>
+
+<div class="col-sm-6">
+  <img src="https://i2-prod.mirror.co.uk/incoming/article26185108.ece/ALTERNATES/s615b/1_GettyImages-1238318156.jpg" class="img-fluid">
+</div>
+
+</div>
+
+<div class="row row-content">
+  <p>Manchester United superstar forward Cristiano Ronaldo has been sent a stinging message by Premier League icon Frank Leboeuf following his return to Old Trafford.
+
+The ex-Chelsea defender has suggested Ronaldo, who has won five Ballon d'Or awards during his career, has become a "normal player" following his Premier League comeback.
+
+It comes following reports that Ronaldo's dressing room antics at Old Trafford are splitting opinion after he reportedly approached Ralf Rangnick and suggested changes to the current formation in order to help get the best out of him.
+
+And Mauricio Pochettino's 'true feelings' on the Manchester United job have been revealed as interest from Real Madrid also emerges.
+Mauricio Pochettino's feelings about the Manchester United manager's job have been revealed.<br><strong>
+<a href="https://www.mirror.co.uk/sport/football/news/man-utd-news-cristiano-ronaldo-26334105" target="_blank">More Info</a></strong>
+</p>
+</div>
+
+</div>
+
+
+<div class="space"></div>
+<div class="space"></div>
+
+
+<div class="container">
+  
+<div class="row row-content">
+
+<div class="col-sm-5">
+<h2>'Messi Will Return To Barcelona'</h2>
+
+  
+</div>
+
+<div class="col-sm-6">
+  <img src="https://cdn.soccerladuma.co.za/cms2/image_manager/uploads/News/713620/7/default.jpg" class="img-fluid">
+</div>
+
+</div>
+
+<div class="row row-content">
+  <p>It has been claimed Paris Saint-Germain superstar Lionel Messi will return to Barcelona at the end of the season.
+  The 34-year-old joined the Catalan club in August last year after his contract in Spain expired and Barca decided that renewing his deal would be financially impossible.<br>
+
+Since his move to the French giants, while there have been flashes of brilliance, Messi has been subjected to a lot of criticism for his overall impact on the side.<br>
+This has seemingly led the son of legendary Argentine footballer Diego Maradona, Diego Sinagra, to believe the seven-time Ballon d'Or winner will make his way back to his former club once this campaign is concluded.<br>
+Messi has scored seven goals and assisted a further nine strikes in 22 games in all competitions for PSG so far this season, and has missed eight matches due to injury. <br><strong>
+<a href="https://www.goal.com/en/player/lionel-messi/c5ryhn04g9goikd0blmh83aol" target="_blank">More Info</a></strong>
+</p>
+</div>
+
+</div>
+
+<div class="space"></div>
+<div class="space"></div>
+
+
+
+<div class="container">
+  
+<div class="row row-content">
+
+<div class="col-sm-5">
+<h2>Barcelona president says signing €75m Real Madrid-linked forward is “very difficult”</h2>
+
+  
+</div>
+
+<div class="col-sm-6">
+  <img src="https://barcamediaus.com/wp-content/uploads/2022/02/Joan-Laporta-1.jpg" class="img-fluid">
+</div>
+
+</div>
+
+<div class="row row-content">
+  <p>Barcelona president Joan Laporta has termed the possibility of signing Erling Haaland in the summer transfer window as ‘very difficult’.
+
+Responding to a fan’s questions, the club president gave an honest assessment while saying that the management is doing everything in its power to do the best for the team. <br>
+Barcelona’s pursuit of acquiring Haaland has hit a substantial roadblock as reports have emerged that Real Madrid are also working on the acquisition. What gives Los Blancos an advantage in the negotiation is their better financial muscle; something that Barcelona are struggling to cope with.<br>
+t’s inevitable that Haaland will be on the move in the summer transfer window, and as of today, it’s only a question of which team he picks. His release clause, which stands at €75 million, is not going to be any worry for the suitors, but Raiola’s €20 million commission is certain to affect the negotiations for many. <br><strong>
+<a href="https://barcauniversal.com/barcelona-president-says-signing-e75m-real-madrid-linked-forward-is-very-difficult/" target="_blank">More Info
+</a></strong>
+
+</p>
+</div>
+
+</div>
+
+
+
+
+<div class="space"></div>
+<div class="space"></div>
+
+
+
+<div class="container">
+  
+<div class="row row-content">
+
+
+<div class="col-md-6 justify-content">
+ 
+  <iframe src="https://www.youtube.com/embed/5w-MjIHHrLM" class="justify-content"></iframe>
+
+</div>
+
+    <div class="col-md-6 justify-content">
+      <iframe class="justify-content" src="https://www.youtube.com/embed/NhtchZnM5QU" class="margin1"></iframe>
+  </div>
+</div>
+
+<div class="space"></div>
+
+
+</div>
+
+<div class="space"></div>
+
+
+<footer class="text-center text-white bg-success">
+  <!-- Grid container -->
+  <div class="container pt-4">
+    <!-- Section: Social media -->
+    <section class="mb-4">
+      <!-- Facebook -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-facebook-f"></i
+      ></a>
+
+      <!-- Twitter -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-twitter"></i
+      ></a>
+
+      <!-- Google -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-google"></i
+      ></a>
+
+      <!-- Instagram -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-instagram"></i
+      ></a>
+
+      <!-- Linkedin -->
+      <a
+        class="btn btn-link btn-floating btn-lg text-white m-1"
+        href="#!"
+        role="button"
+        data-mdb-ripple-color="dark"
+        ><i class="fab fa-linkedin"></i
+      ></a>
+     
+    </section>
+    <!-- Section: Social media -->
+  </div>
+  <!-- Grid container -->
+
+  <!-- Copyright -->
+  <div class="text-center text-white p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+  Thank you for reviewing my work this page was made by <strong>
+       Ayham Suliman 
+    </strong>using [HTML, CSS, JavaScript, jQuery, Bootstrap5]
+   
+  
+  </div>
+  <!-- Copyright -->
+</footer>
+
+
+
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.1.3/js/bootstrap.bundle.min.js" integrity="sha512-pax4MlgXjHEPfCwcJLQhigY7+N8rt6bVvWLFyUMuxShv170X53TRzGPmPkZmGBhk+jikR8WBM4yl7A9WMHHqvg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+<script>
+  
+  $('ul li a').click(function() {
+   $('ul li a').removeClass('active');
+   $(this).addClass('active');
+
+  });
+
+</script>
+
+</body>
+
+
+</html>
